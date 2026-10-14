@@ -9,11 +9,19 @@ package part00;
 // what it returns. Right now it returns "" — an empty String — so the test is red.
 // Your job: change the one line marked YOUR CODE so the test goes green.
 
-public class Challenge {
 
-    // greeting("Jordan") should return "Hello, Jordan!"
-    // greeting("Sam")    should return "Hello, Sam!"
+public class Challenge {
     public static String greeting(String name) {
-        return "";   // YOUR CODE — replace "" with the right answer
+        // Returns a greeting.
+        return "Hello, " + name + "!";
+    }
+
+    public static String farewell(String name) {
+        // Returns a goodbye message.
+        return "Goodbye, " + name + "!";
     }
 }
+
+
+
+

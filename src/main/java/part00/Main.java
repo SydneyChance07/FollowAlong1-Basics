@@ -9,9 +9,13 @@ package part00;
 // run it, and check the output matches the README.
 
 public class Main {
+    // public state void main is our kickstarter to jump up the program //
     public static void main(String[] args) {
+        // line 15 commands string part 00 to be printed out //
         System.out.println("=== Part 00 ===");
-        System.out.println("Hello from YOUR NAME");
+        // line 17 prints out me introducing myself //
+        System.out.println("Hello I'm Sydney");
+        // line 19 prints out a confirmation that your setup works if you can read that line of code //
         System.out.println("If you can read this, your setup works.");
     }
 }

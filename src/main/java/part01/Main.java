@@ -14,5 +14,12 @@ package part01;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class Main {
-
+    public static void main(String[] args) {
+        // Prints a quote with a tab.
+        System.out.println("\t\"I love pizza\"\n");
+        // Prints a sentence with a backslash.
+        System.out.println("It's really good \\");
+    }
 }
+
+

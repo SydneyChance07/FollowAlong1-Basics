@@ -14,6 +14,27 @@ package part02;
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
-public class Variables {
 
+
+public class Variables {
+    public static void main(String[] args) {
+        // Stores a name.
+        String name = "Sydney Chance";
+
+        // Stores an age.
+        int age = 19;
+
+        // Stores a GPA.
+        double gpa = 3.06;
+
+        // Stores whether I am a commuter.
+        boolean commuter = true;
+
+        // Prints the information.
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("GPA: " + gpa);
+        System.out.println("Commuter: " + commuter);
+    }
 }
+
