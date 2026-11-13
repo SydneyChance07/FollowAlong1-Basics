@@ -1,13 +1,40 @@
 package part03;
 
-// Video: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=2365s
-//        rewatch 39:25–47:00 for Scanner, and 43:34 for the nextInt trap
-// Guide: GUIDE.md in this folder, steps 5–11
-//
-// SECTION D — Challenge. Mad Libs. The README lists the rules.
-//
-// There is no main method here yet. Typing it is part of the challenge.
+import java.util.Scanner;
+
+/*
+Sydney Chance
+Mad Libs Adventure Story
+*/
 
 public class Challenge {
+    public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Name a hero:");
+        String hero = scanner.nextLine();
+
+        System.out.println("Name a villain:");
+        String villain = scanner.nextLine();
+
+        System.out.println("Pick a number:");
+        int number = scanner.nextInt();
+
+        scanner.nextLine();
+
+        System.out.println("Name a place:");
+        String place = scanner.nextLine();
+
+        System.out.println(hero + " traveled to " + place + ".");
+        System.out.println("There were " + number + " problems, and " + villain + " caused them.");
+
+        String temp = hero;
+        hero = villain;
+        villain = temp;
+
+        System.out.println("Plot twist: " + hero + " was actually the hero, and " + villain + " was the villain!");
+
+        scanner.close();
+    }
 }

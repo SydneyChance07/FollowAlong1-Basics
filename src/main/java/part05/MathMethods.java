@@ -1,19 +1,46 @@
 package part05;
 
-// Video: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3518s
-//        Math class starts at about 58:38 — stop at about 61:29, "here's a project"
-// Guide: GUIDE.md in this folder, steps 1–6
-//
-// Part 05 — the Math class: max, min, abs, sqrt, round, ceil, floor
-//
-// SECTION A — FOLLOW ALONG: type the code from the video (or the guide) in this class.
-//    His class is called Main. Yours is called MathMethods.
-//    Leave the "package part05;" line and the "public class MathMethods" line alone.
-//    Type everything else yourself.
-//
-// SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
-//    saying in YOUR OWN WORDS what that line does. The README shows an example.
-
+// This program demonstrates Java Math methods
 public class MathMethods {
+    public static void main(String[] args) {
 
+        // Create two decimal numbers
+        double x = 3.14;
+        double y = -10;
+
+        // Find the larger number
+        double z = Math.max(x, y);
+        System.out.println(z);
+
+        // Find the smaller number
+        z = Math.min(x, y);
+        System.out.println(z);
+
+        // Find the absolute value
+        z = Math.abs(y);
+        System.out.println(z);
+
+        // Find the square root of a negative number
+        z = Math.sqrt(y);
+        System.out.println(z);
+
+        // Change y to a positive number
+        y = 3.16;
+
+        // Find the square root
+        z = Math.sqrt(y);
+        System.out.println(z);
+
+        // Round to the nearest whole number
+        z = Math.round(x);
+        System.out.println(z);
+
+        // Round up
+        z = Math.ceil(x);
+        System.out.println(z);
+
+        // Round down
+        z = Math.floor(x);
+        System.out.println(z);
+    }
 }

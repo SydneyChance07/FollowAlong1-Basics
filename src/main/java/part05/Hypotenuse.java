@@ -1,19 +1,34 @@
 package part05;
 
-// Video: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3689s
-//        the hypotenuse project starts at about 61:29 — stop at about 63:52
-// Guide: GUIDE.md in this folder, steps 7–10
-//
-// Part 05 — a project that uses the Math class: find the long side of a triangle
-//
-// SECTION A — FOLLOW ALONG: type the code from the video (or the guide) in this class.
-//    His class is called Main. Yours is called Hypotenuse.
-//    Leave the "package part05;" line and the "public class Hypotenuse" line alone.
-//    The import line goes BETWEEN them (the guide shows where).
-//
-// SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
-//    saying in YOUR OWN WORDS what that line does.
+import java.util.Scanner;
 
+// This program calculates the hypotenuse of a triangle
 public class Hypotenuse {
+    public static void main(String[] args) {
 
+        // Create variables for the triangle sides and answer
+        double x;
+        double y;
+        double z;
+
+        // Create a Scanner for user input
+        Scanner scanner = new Scanner(System.in);
+
+        // Ask for the first side
+        System.out.println("Enter side x: ");
+        x = scanner.nextDouble();
+
+        // Ask for the second side
+        System.out.println("Enter side y: ");
+        y = scanner.nextDouble();
+
+        // Calculate the hypotenuse
+        z = Math.sqrt((x * x) + (y * y));
+
+        // Print the answer
+        System.out.println("The hypotenuse is: " + z);
+
+        // Close the Scanner
+        scanner.close();
+    }
 }

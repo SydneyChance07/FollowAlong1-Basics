@@ -1,20 +1,27 @@
 package part04;
 
-// Video: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3191s
-//        starts at about 53:11 — stop at about 58:10, at "in conclusion ladies and gentlemen"
-// Guide: GUIDE.md in this folder, steps 7–11
-//
-// Part 04, topic 2 — pop-up windows with JOptionPane
-//
-// SECTION A — FOLLOW ALONG: type the code from the video (or the guide) in this file.
-//    His class is called Main. Yours is called GUI.
-//    Leave the "package part04;" line and the "public class GUI" line alone.
-//    He types an import line ABOVE the class. Type yours on the empty line
-//    under "package part04;".
-//
-// SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
-//    saying in YOUR OWN WORDS what that line does. That includes the import line.
+import javax.swing.JOptionPane;
 
+// This program asks questions using pop-up windows
 public class GUI {
+    public static void main(String[] args) {
 
+        // Ask for the user's name
+        String name = JOptionPane.showInputDialog("Enter your name");
+
+        // Display a greeting
+        JOptionPane.showMessageDialog(null, "Hello " + name);
+
+        // Ask for the user's age and convert it into an integer
+        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+
+        // Display the age
+        JOptionPane.showMessageDialog(null, "You are " + age + " years old");
+
+        // Ask for the user's height and convert it into a decimal
+        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+
+        // Display the height
+        JOptionPane.showMessageDialog(null, "You are " + height + " cm tall");
+    }
 }
